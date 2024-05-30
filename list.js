@@ -33,6 +33,22 @@ const persons = [
         country: 'India',
         city: 'Bengalor'
 
+    },
+    {
+        id: 5,
+        age: 37,
+        name: 'Fahad Fassil',
+        country: 'India',
+        city: 'Bengalor'
+
+    },
+    {
+        id: 6,
+        age: 43,
+        name: 'Nawaz Uddin Siddique',
+        country: 'India',
+        city: 'Bengalor'
+
     }
 ]
 
@@ -56,7 +72,7 @@ function myTableList(tableData) {
     `
     ;
 
-/// for checking array is empty
+// for checking array is empty
 
 if (tableData==""){
     document.getElementById('error').innerHTML=`<span class=text-danger>Not Found<span>`
@@ -90,7 +106,7 @@ let newArray =[];
 
 //for searching method..
 document.getElementById('search'). addEventListener ('keyup', function(){
-    const search = this.value.toLowerCase();
+    const search = this.ariaValueMax.toLowerCase();
    
     newArray= persons.filter (function (val){
 if (val.id.includes(search)|| val.age.includes(search)|| val.name.includes(search)||
